@@ -27,6 +27,10 @@ This open-source project comes with dual licensing options: MIT and GPL. Feel fr
 - User-friendly GUI powered by PyQt5.
 - Supports multiple operating systems including Windows, macOS, and Linux.
 
+#### Screenshot in macOS
+![Screenshot](imgs/sshot.png)
+
+#### Screenshot in Arch Linux
 ![Screenshot](imgs/sshot.png)
 
 #### Prerequisites
