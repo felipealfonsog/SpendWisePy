@@ -31,7 +31,7 @@ This open-source project comes with dual licensing options: MIT and GPL. Feel fr
 ![Screenshot](imgs/sshot.png)
 
 #### Screenshot in Arch Linux
-![Screenshot](imgs/sshot-arch.png)
+![Screenshot](imgs/sshot-arch.jpg)
 
 #### Prerequisites
 
