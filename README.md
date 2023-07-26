@@ -40,8 +40,20 @@ Before running SpendWisePy, make sure you have the following dependencies instal
 
 1. Clone the repository using `git clone`.
 2. Install the required dependencies with `pip install -r requirements.txt`.
-3. Run the application using `python3 spendwiseapp.py`.
-4. Start managing your expenses efficiently!
+
+   NOTE: If you are an Arch Linux user once you have installed Python and Pip, rename this file (Causes some ssues about pip's externally-managed-environment error):
+   This is in:
+   
+   ```
+   cd /usr/lib/python3.11/
+   ```
+   
+   ```
+   sudo mv EXTERNALLY-MANAGED EXTERNALLY-MANAGED.bak
+   ```
+   
+4. Run the application using `python3 spendwiseapp.py`.
+5. Start managing your expenses efficiently!
 
 #### How to Run
 
