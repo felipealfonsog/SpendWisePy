@@ -1,4 +1,12 @@
 build/
 __pycache__/
 sql/
+dist/
+localpycs/
 *.spec
+*.pyc
+*.pkg
+*.txt
+*.html
+*.toc
+*.zip
