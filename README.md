@@ -1,21 +1,30 @@
 <!-- SpendWisePy - Expense Tracker Application -->
 
 # SpendWisePy 📈💰
-
-SpendWisePy is a simple expense tracker application written in Python that allows users to create and manage their expenses.
-
+SpendWisePy is a simple expense tracker application that allows users to create and manage their expenses.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Language](https://img.shields.io/badge/language-Python-blueviolet.svg)
 ![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen.svg)
 ![Working](https://img.shields.io/badge/working-yes-brightgreen.svg)
 
-SpendWisePy is a simple expense tracker application that allows users to create and manage their expenses.
+## Who wrote it? 📝
 
-🚀 Features:
-- Add expenses with name, amount, description, and date.
-- Update and delete existing expenses.
-- Filter expenses based on a specific date range.
+SpendWisePy is a simple and intuitive expense tracking application built in Python by Felipe Alfonso Gonzalez, a passionate Computer Science Engineer from Chile. 💻🚀
+
+This open-source project comes with dual licensing options: MIT and GPL. Feel free to use, modify, and distribute the software under these permissive licenses. However, if you utilize the source code or create a fork, please kindly attribute Felipe Alfonso Gonzalez as the original creator and the brilliant mind behind this expense management tool. 😊
+
+## Features ✨🚀 
+
+- Create, manage, and track your expenses effortlessly from the comfort of your terminal.
+- Add expense details such as name, amount, description, and date.
+- Update and delete expenses easily with a user-friendly interface.
+- Filter expenses by date range to get better insights.
+- Total expenses displayed for easy monitoring.
+- User-friendly GUI powered by PyQt5.
+- Supports multiple operating systems including Windows, macOS, and Linux.
+
+![Screenshot](imgs/sshot.png)
 
 ## Prerequisites
 
@@ -24,6 +33,12 @@ Before running SpendWisePy, make sure you have the following dependencies instal
 - Python 3
 - PyQt5: Install PyQt5 library using pip:
 
+## How to Use 🚀
+
+1. Clone the repository using `git clone`.
+2. Install the required dependencies with `pip install -r requirements.txt`.
+3. Run the application using `python3 spendwiseapp.py`.
+4. Start managing your expenses efficiently!
 
 ## How to Run
 
@@ -42,7 +57,9 @@ Before running SpendWisePy, make sure you have the following dependencies instal
 
 ## Contributing
 
-🤝 Contributions are welcome! If you'd like to contribute to SpendWisePy, please follow these steps:
+Contributions to this project are more than welcome! If you have any ideas, bug fixes, or new features to add, please feel free to open an issue or submit a pull request. Let's make SpendWisePy even better together! 🤝
+
+🤝 If you'd like to contribute to SpendWisePy, please follow these steps:
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b feature/YourFeature`).
 3. Commit your changes (`git commit -m 'Add some feature'`).
