@@ -2,7 +2,7 @@
 
 # SpendWisePy 📈💰
 
-SpendWisePy is a simple expense tracker application that allows users to create and manage their expenses.
+SpendWisePy is a simple expense tracker application written in Python that allows users to create and manage their expenses.
 
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
