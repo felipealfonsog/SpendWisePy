@@ -14,8 +14,8 @@ SpendWisePy is a simple expense tracker application that allows users to create 
 [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
 
 SpendWisePy is a simple and intuitive expense tracking application built in Python by Felipe Alfonso Gonzalez, a passionate Computer Science Engineer from Chile. 💻🚀
-
-This open-source project comes with dual licensing options: MIT and GPL. Feel free to use, modify, and distribute the software under these permissive licenses. However, if you utilize the source code or create a fork, please kindly attribute Felipe Alfonso Gonzalez as the original creator and the brilliant mind behind this expense management tool. 😊
+#### IMPORTANT NOTE
+This open-source project comes with dual licensing options: MIT and GPL. Feel free to use, modify, and distribute the software under these permissive licenses. However, if you utilize the source code or create a fork, please kindly attribute Felipe Alfonso Gonzalez as the original creator behind this expense management tool.
 
 #### Features ✨🚀 
 
