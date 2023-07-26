@@ -1,7 +1,7 @@
-build/
 __pycache__/
-sql/
-dist/
+#build/
+#sql/
+#dist/
 localpycs/
 *.spec
 *.pyc
