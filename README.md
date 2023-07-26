@@ -40,7 +40,8 @@ Before running SpendWisePy, make sure you have the following dependencies instal
 
 1. Clone the repository using `git clone`.
 2. Install the required dependencies with `pip install -r requirements.txt`.
-   NOTE: If you are an Arch Linux user once you have installed Python and Pip, rename this file (Causes Issues):
+
+   NOTE: If you are an Arch Linux user once you have installed Python and Pip, rename this file (Causes some ssues about pip's externally-managed-environment error):
    This is in:
    
    ```
