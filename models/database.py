@@ -1,41 +1,112 @@
+# models/database.py
+'''
+
+
+▒█▀▀▀█ █▀▀█ █▀▀ █▀▀▄ █▀▀▄ ▒█░░▒█ ░▀░ █▀▀ █▀▀ ▒█▀▀█ █░░█ 
+░▀▀▀▄▄ █░░█ █▀▀ █░░█ █░░█ ▒█▒█▒█ ▀█▀ ▀▀█ █▀▀ ▒█▄▄█ █▄▄█ 
+▒█▄▄▄█ █▀▀▀ ▀▀▀ ▀░░▀ ▀▀▀░ ▒█▄▀▄█ ▀▀▀ ▀▀▀ ▀▀▀ ▒█░░░ ▄▄▄█
+
+
+*************************************************
+SpendWisePy Expense Tracker Application
+*************************************************
+*  Simple: An expense tracking application to create and manage expenses.
+*************************************************
+* Developed and engineered by:
+* Felipe Alfonso Gonzalez <f.alfonso@res-ear.ch>
+* Computer Science Engineer
+* Chile
+*************************************************
+* Prerequisites:
+* - Python 3: Make sure you have Python 3 installed on your system.
+* - PyQt5: Install PyQt5 library for the graphical user interface.
+*   You can install it using pip: pip install pyqt5
+* - Database model: The application uses a custom database model.
+*   Make sure to include the appropriate model or adapt it for your needs.
+*************************************************
+* How to run the SpendWisePy application:
+*
+* 1. Clone the SpendWisePy repository from GitHub.
+*
+* 2. Navigate to the project directory:
+*    cd SpendWisePy
+*
+* 3. Run the main application script:
+*    python spendwiseapp.py
+*
+* 4. The SpendWisePy application will launch, allowing you to:
+*    - Add expenses with name, amount, description, and date.
+*    - Update and delete existing expenses.
+*    - Filter expenses based on a specific date range.
+*
+* 5. To exit the application, close the main window.
+*
+*************************************************
+* Important Notes:
+* - The application has been tested on Linux and macOS.
+* - For Windows, additional configurations may be required.
+* - Make sure to fulfill the prerequisites before running the application.
+* - The database model may need to be adjusted to match your database setup.
+* - For more information, please refer to the project documentation.
+*************************************************
+'''
+
+
 import mysql.connector
 
-class Expense:
-    def __init__(self, expense_id, description, amount, date):
-        self.expense_id = expense_id
-        self.description = description
-        self.amount = amount
-        self.date = date
-
-class SubExpense:
-    def __init__(self, subexpense_id, expense_id, expense_type, amount, date):
-        self.subexpense_id = subexpense_id
-        self.expense_id = expense_id
-        self.expense_type = expense_type
-        self.amount = amount
-        self.date = date
-
-
-class Database:
-    def __init__(self, host, user, password, database_name):
+class DatabaseModel:
+    def __init__(self):
         self.connection = mysql.connector.connect(
-            host=host,
-            user=user,
-            password=password,
-            database=database_name
+            host='localhost',
+            user='root2',
+            password='root2',
+            database='SpendWisePy'
         )
         self.cursor = self.connection.cursor()
 
-    def add_expense(self, description, amount, date):
-        query = "INSERT INTO expenses (description, amount, date) VALUES (%s, %s, %s)"
-        values = (description, amount, date)
+    def __del__(self):
+        self.cursor.close()
+        self.connection.close()
+
+    def create_table(self):
+
+
+        query = """
+        CREATE TABLE IF NOT EXISTS expenses (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(255) NOT NULL,
+            amount DECIMAL(10, 2) NOT NULL,
+            description VARCHAR(255),
+            date DATE NOT NULL  -- Change this to DATE type
+        )
+        """
+        self.cursor.execute(query)
+        self.connection.commit()
+
+
+
+    def add_expense(self, name, amount, description, date):
+        query = "INSERT INTO expenses (name, amount, description, date) VALUES (%s, %s, %s, %s)"
+        values = (name, amount, description, date)  # No es necesario convertir la fecha a cadena
         self.cursor.execute(query, values)
         self.connection.commit()
 
+
+
     def get_all_expenses(self):
-        self.cursor.execute("SELECT * FROM expenses")
-        expenses_data = self.cursor.fetchall()
-        expenses = [Expense(expense_id=row[0], description=row[1], amount=row[2], date=row[3]) for row in expenses_data]
+        query = "SELECT * FROM expenses"
+        self.cursor.execute(query)
+        expenses = self.cursor.fetchall()
         return expenses
 
-    # Resto del código...
+    def update_expense(self, expense_id, new_name, new_amount, new_description, new_date):
+        query = "UPDATE expenses SET name = %s, amount = %s, description = %s, date = %s WHERE id = %s"
+        values = (new_name, new_amount, new_description, new_date, expense_id)  # No es necesario convertir la fecha a cadena
+        self.cursor.execute(query, values)
+        self.connection.commit()
+
+    def delete_expense(self, expense_id):
+        query = "DELETE FROM expenses WHERE id = %s"
+        values = (expense_id,)
+        self.cursor.execute(query, values)
+        self.connection.commit()
