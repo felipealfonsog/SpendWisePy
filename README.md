@@ -38,6 +38,7 @@ This open-source project comes with dual licensing options: MIT and GPL. Feel fr
 Before running SpendWisePy, make sure you have the following dependencies installed:
 
 - Python 3
+- Mysql
 - "mysql-connector-python" for Python: Install using "pip install mysql-connector-python"
 - To configure the credentials for Mysql, go to "models/database.py"
 - PyQt5: Install PyQt5 library using pip:
