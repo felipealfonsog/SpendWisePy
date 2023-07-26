@@ -11,7 +11,7 @@ localpycs/
 *.spec
 *.pyc
 *.pkg
-*.txt
+#*.txt
 *.html
 *.toc
 *.zip
