@@ -17,7 +17,7 @@ SpendWisePy is a simple and intuitive expense tracking application built in Pyth
 
 This open-source project comes with dual licensing options: MIT and GPL. Feel free to use, modify, and distribute the software under these permissive licenses. However, if you utilize the source code or create a fork, please kindly attribute Felipe Alfonso Gonzalez as the original creator and the brilliant mind behind this expense management tool. 😊
 
-## Features ✨🚀 
+#### Features ✨🚀 
 
 - Create, manage, and track your expenses effortlessly from the comfort of your terminal.
 - Add expense details such as name, amount, description, and date.
@@ -29,21 +29,21 @@ This open-source project comes with dual licensing options: MIT and GPL. Feel fr
 
 ![Screenshot](imgs/sshot.png)
 
-## Prerequisites
+#### Prerequisites
 
 Before running SpendWisePy, make sure you have the following dependencies installed:
 
 - Python 3
 - PyQt5: Install PyQt5 library using pip:
 
-## How to Use 🚀
+#### How to Use 🚀
 
 1. Clone the repository using `git clone`.
 2. Install the required dependencies with `pip install -r requirements.txt`.
 3. Run the application using `python3 spendwiseapp.py`.
 4. Start managing your expenses efficiently!
 
-## How to Run
+#### How to Run
 
 1. Clone the SpendWisePy repository from GitHub.
 
@@ -58,7 +58,7 @@ Before running SpendWisePy, make sure you have the following dependencies instal
 🛠️ Database
 - SpendWisePy uses a custom database model. Make sure to include the appropriate model or adapt it for your needs.
 
-## Contributing
+#### Contributing
 
 Contributions to this project are more than welcome! If you have any ideas, bug fixes, or new features to add, please feel free to open an issue or submit a pull request. Let's make SpendWisePy even better together! 🤝
 
@@ -69,14 +69,14 @@ Contributions to this project are more than welcome! If you have any ideas, bug 
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a pull request.
 
-## Contact
+#### Contact
 
 📧 For any questions or suggestions, feel free to contact the developer:
 - Name: Felipe Alfonso Gonzalez
 - Email: f.alfonso@res-ear.ch
 - GitHub: [felipealfonsog](https://github.com/felipealfonsog)
 
-## Support
+#### Support
 
 ☕ If you find SpendWisePy helpful, consider supporting the project with a cup of coffee:
 
