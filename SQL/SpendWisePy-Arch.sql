@@ -1,4 +1,10 @@
 
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
 CREATE TABLE `expenses` (
   `id` int NOT NULL,
   `description` varchar(255) DEFAULT NULL,
@@ -8,10 +14,11 @@ CREATE TABLE `expenses` (
 ) 
 
 
+
+
 ALTER TABLE `expenses`
   ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `expenses`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
-
