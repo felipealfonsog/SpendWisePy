@@ -103,7 +103,7 @@ Contributions to this project are more than welcome! If you have any ideas, bug 
 
 ☕ If you find SpendWisePy helpful, consider supporting the project with a cup of coffee:
 
-- [![Sponsor on Paypal](https://img.shields.io/badge/Sponsor%20on-Paypal-blue)](https://paypal.com/felipealfonsog)
+- [![Sponsor on Paypal](https://img.shields.io/badge/Sponsor%20on-Paypal-blue)](https://paypal.me/felipealfonsog)
 - [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-orange)](https://www.buymeacoffee.com/felipealfonsog)
 - [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20on-GitHub-green)](https://github.com/sponsors/felipealfonsog)
 
