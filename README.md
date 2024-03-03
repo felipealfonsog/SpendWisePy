@@ -32,11 +32,11 @@ This open-source project comes with dual licensing options: MIT. In short words,
 
 #### Screenshot in macOS
 
-<img src="./imgs/sshot-macos.jpg" alt="Screenshot" width="150" height="150">
+<img src="./imgs/sshot-macos.jpg" alt="Screenshot" width="350" height="350">
 
 #### Screenshot in Arch Linux
 
-<img src="./imgs/sshot-arch.jpg" alt="Screenshot" width="150" height="150">
+<img src="./imgs/sshot-arch.jpg" alt="Screenshot" width="350" height="350">
 
 
 #### Prerequisites and notes
